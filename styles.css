@@ -1,0 +1,252 @@
+body {
+  font-family: Roboto;
+  margin: 0;
+  /* padding: 3rem; */
+}
+
+.text {
+  position: relative;
+  left: 20%;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 0px;
+}
+
+
+#clock {
+  height: 500px;
+  width: 500px;
+  border: 2px solid black;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin: 3rem auto;
+  position: relative;
+ /*  background: rgb(11,0,196); */
+  background: radial-gradient(circle, rgba(11,0,196,1) 0%, rgba(17,17,195,1) 35%, rgba(29,127,147,1) 100%);
+  box-shadow: 1px 1px 20px 5px black;
+  transition: background 0.2s;
+}
+
+#smallSeconds {
+  height: 125px;
+  width: 125px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 200px;
+  left: 50px;
+  border: 2px solid gold;
+}
+
+#tenthSecondDial {
+  height: 125px;
+  width: 125px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 200px;
+  right: 50px;
+  border: 2px solid gold;
+}
+
+#chronoMinuteDial {
+  height: 125px;
+  width: 125px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 50px;
+  left: 185px;
+  border: 2px solid gold;
+}
+
+#second {
+  height: 500px;
+  width: 2px;
+  position: absolute;
+  top: 0px;
+  left: 249px;
+/*   background-color: black; */
+  transition: transform 1s;
+  transition-timing-function: linear
+}
+
+#secondHand {
+  background-color: gold;
+  height: 50%;
+}
+
+#smallSecondHand {
+  position: absolute;
+  left: 62px;
+  width: 2px;
+  height: 125px;
+  transition: transform 1s;
+  transition-timing-function: linear;
+}
+
+#tenthSecondHand {
+  position: absolute;
+  left: 62px;
+  width: 2px;
+  height: 125px;
+}
+
+#chronoMinuteHand {
+  position: absolute;
+  left: 62px;
+  width: 2px;
+  height: 125px;
+  transition: transform 1s;
+}
+
+#smallSecondHandFinger {
+  height: 50%;
+  background-color: gold;
+}
+
+#tenthSecondFinger {
+  height: 50%;
+  background-color: gold;
+}
+
+#chronoMinuteHandFinger {
+  height: 50%;
+  background-color: gold;
+}
+
+#minute {
+  height: 400px;
+  width: 4px;
+  position: absolute;
+  left: 248px;
+  top: 50px;
+  transition: transform 1s;
+  transition-timing-function: linear;
+}
+
+#minuteHand {
+  background-color: gold;
+  height: 50%;
+}
+
+#hour {
+  height: 250px;
+  width: 8px;
+  position: absolute;
+  left: 246px;
+  top: 125px;
+/* background-color: black; */
+  transition: transform 1s;
+  transition-timing-function: linear
+}
+
+#hourHand {
+  background-color: gold;
+  height: 50%;
+}
+
+
+.main {
+  position: absolute;
+  top: 0;
+  left: 249px;
+  width: 2px;
+  height: 500px;
+  /* background-color: black */
+}
+
+.smallMain {
+  position: absolute;
+  top: 0;
+  left: 62px;
+  width: 1px;
+  height: 125px;
+  /* background-color: black */
+}
+
+
+.middle {
+  height: 480px;
+}
+
+.smallMiddle {
+  height: 121px;
+}
+
+
+
+.tick {
+  height: 10px;
+  background-color: gold;
+}
+
+.smallTick {
+  height: 2px;
+  background-color: gold;
+}
+
+
+
+
+
+
+
+.mainThick {
+  position: absolute;
+  top: 0;
+  left: 248px;
+  width: 4px;
+  height: 500px;
+}
+
+.smallMainThick {
+  position: absolute;
+  left: 62px;
+  width: 2px;
+  height: 125px;
+}
+
+.middleThick {
+  height: 440px;
+}
+
+.smallMiddleThick {
+  height: 113.5px;
+}
+
+
+.tickThick {
+  height: 30px;
+  background-color: gold;
+}
+  .smallTickThick {
+  height: 6px;
+  background-color: gold;
+}
+
+.buttons {
+  text-align: center;
+}
+
+button {
+  border: 1px solid gold;
+  background-color: rgb(14,6,196);
+  color: gold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+
+/* vertical alignment */
+/* #line {
+  position: absolute;
+  width: 2px;
+  height: 600px;
+  background-color: black;
+  left: 50%;
+} */
